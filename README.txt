@@ -1,0 +1,1 @@
+An AngularJS based application of the Open Weather Map API.

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Weather App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- AngularJS --> 
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
+  
+  <!-- Bootstrap -->
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+  
+  <!-- Weather Icons -->
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.min.css'>
+  
+  <!-- Fonts -->
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Lato:400,700'>
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body ng-app="weather">
+  
+  
+  <div class="main" ng-controller="mainController">
+    <div class="dynamicBackgroundContainer"><img class="dynamicBackground" ng-src="{{dynamicBackground}}"/></div>
+    <div class="location">{{current.location}}<div id="clock"></div></div>
+    <div class="container-fluid">
+      <div class="data-container">
+        <div weather-current info="current" class="current"></div>
+
+        <div weather-forecast info="forecast" class="forecast"></div>
+        
+
+      </div>
+      
+    </div>
+    
+    <div class="copyright">
+      <p>
+            
+        Background Image by <a ng-href="{{creditLink}}" target="_blank">{{creditAuthor}}</a>
+        <br>
+        Powered by 
+        <a href="https://openweathermap.org" target="_blank">Open Weather Map</a>
+        <br>
+        Icons courtesy of 
+        <a href="https://erikflowers.github.io/weather-icons/" target="_blank">The Weather Icons</a>
+        <br>
+        &#169;2017 
+        <a href="https://znicholasbrown.github.io" target="_blank">Z Nicholas Brown</a>
+      </p>
+    </div>
+
+  </div>
+
+
+
+
+  
+
+  
+    
+  
+    <!-- jQuery -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+  
+    <!-- Modules -->
+    <script src="js/weather.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-sanitize/1.6.5/angular-sanitize.js"></script>
+
+    <!-- Controllers -->
+    <script src="js/controllers/mainController.js"></script>
+
+    <!-- Directives -->
+    <script src="js/directives/weather-current.js"></script>
+    <script src="js/directives/weather-forecast.js"></script>
+    
+    <!-- Vanilla JS -->
+    <script src="js/vanilla.js"></script>
+</body>
+  
+</html>

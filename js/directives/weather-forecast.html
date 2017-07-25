@@ -1,0 +1,11 @@
+<div class="row">
+  <div ng-repeat="day in info" class="col">
+    <div class="day">
+      <div class="icon" ng-bind-html="day.icon">{{ day.icon }}</div>
+      <p class="weekday">{{ day.day }}</p>
+      <p class="temp">{{ day.temp }}</p>
+      <p class="cond">{{ day.cond }}</p>
+    </div>
+  </div>
+</div>
+  

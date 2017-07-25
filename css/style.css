@@ -1,0 +1,149 @@
+body {
+  background-color: white;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  color: black;
+}
+
+.dynamicBackgroundContainer {
+  position: fixed;
+  min-height: 100%;
+  min-width: 1600px;
+  overflow: hidden;
+}
+
+.dynamicBackground {
+  width: 100%;
+  z-index: 8 !important;
+}
+.location {
+  z-index: 10 !important;
+  color: white;
+  position: absolute;
+  background-color: rgba(0,0,0, 0.7);
+  border-radius: 5px;
+  padding: 5px 5px 5px 5px;
+  margin-left: 10px;
+  margin-top: 10px;
+  text-align: center;
+}
+.current, .forecast {
+  text-align: center;
+  position: relative;
+}
+.data-container {
+  margin-top: 0;
+  transform: translateY(2.5%);
+}
+
+.forecast {
+  margin-top: 25px;
+}
+.sunrise, .sunset {
+  margin-left: 7.5px;
+  margin-right: 7.5px;
+}
+
+.day, .current-day {
+  background-color: rgba(0,0,0, 0.7);
+  border-radius: 5px;
+  padding: 0 0 15px 0;
+  min-width: 200px;
+  max-width: 200px;
+  margin: auto;
+  line-height: 0.85em;
+  font-size: 0.95em;
+  color: white;
+}
+.day {
+  margin-top: 25px;
+  margin-bottom: 105px;
+}
+.current-day {
+  margin-top: 5%;
+  max-width: 400px;
+  font-size: 1.25em;
+}
+
+.today, .weekday {
+  font-weight: 700;
+}
+
+.weekday {
+  font-size: 1em;
+}
+
+.icon {
+  font-size: 3em;
+  line-height: 2em;
+}
+
+
+.copyright {
+  position: fixed;
+  padding-top: 10px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-top: -105px;
+  top: 100%;
+  text-align: center;
+  font-size: 0.75em;
+  background-color: rgba(0,0,0, 0.7);
+  border-radius: 5px;
+  color: white;
+  width: 275px;
+}
+
+.wi-day-sunny {
+  color:#FFFF3C;
+}
+.wi-night-clear{
+  color:#333268;
+}
+.wi-day-cloudy{
+  color:#FFF273;
+}
+.wi-night-alt-cloudy{
+  color:#B1C3E0;
+}
+.wi-cloudy{
+  color:#828282;
+}
+.wi-snow{
+  color:#DDDDFF;
+}
+.wi-sleet{
+  color:#D4D3F1;
+}
+.wi-rain-mix{
+  color:#D4D3F1;
+}
+.wi-rain{
+  color:#3834D6;
+}
+.wi-thunderstorm{
+  color:#FCEC4F;
+}
+.wi-hail{
+  color:#7D90AE;
+}
+.wi-tornado{
+  color:#B7B7B7;
+}
+.wi-fog{
+  color:#D6D6D6;
+}
+.wi-thermometer{
+  color:#F6441D;
+}
+
+
+
+
+
+
+
+
+
+
